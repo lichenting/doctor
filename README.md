@@ -15,6 +15,7 @@
             android:title="消息中心" />
        ...
 </menu>
+    
 4.加载效果 选用ProgressBar 应用在主界面上，当点击主界面一些按钮时加载东西是会出现
 以下为在主界面布局中加载效果的代码
 <?xml version="1.0" encoding="utf-8"?>
@@ -23,6 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="center"/>
+            
 5.悬浮按钮和可交互提示  以下为布局文件代码
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.FloatingActionButton
@@ -33,7 +35,8 @@
             android:layout_margin="16dp"
             android:src="@drawable/had"
             app:elevation="8dp"/>
-6.具有网络请求与解析   采用JsonObject解析，开启线程发起网络请求
+            
+6.具有网络请求与解析   采用JsonObject解析，开启线程发起网络请求，通过学习，提前写好json文件，然后读取并且解析
 private void parseJSONWithJSONObject(String jsonData){
         try{
             JSONArray jsonArray = new JSONArray(jsonData);
